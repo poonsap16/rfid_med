@@ -16,13 +16,13 @@ class CreateRfidDataTable extends Migration
         Schema::create('rfid_data', function (Blueprint $table) {
             $table->integer('id');
             $table->string('rfid_number',15);
-            $table->integer('sap_id');
+            $table->string('sap_id');
             $table->string('firstname_lastname',255);
             $table->date('date_stamp');
             $table->time('time_stamp');
             $table->string('reader_location',2);
             $table->string('reader_status',2);
-            $table->string('reader_door',5);
+            $table->string('reader_door',10);
             $table->timestamps();
         });
     }
