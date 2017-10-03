@@ -19,9 +19,9 @@ class CreateStaffsTable extends Migration
             $table->string('emp_ranknake',10);
             $table->string('emp_firstname',100);
             $table->string('emp_lastname',100);
-            $table->integer('emp_flag');
+            $table->integer('emp_flag')->unsigned();
             $table->vachar('doctor_cert',6);
-            $table->integer('position_type');
+            $table->integer('position_type')->unsigned();
             $table->string('section',255);
             $table->timestamps();
         });

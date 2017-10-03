@@ -28,7 +28,7 @@ class CreateStudentsTable extends Migration
             $table->string('telephone',10);
             $table->string('e_mail',255);
             $table->string('year',20);
-            $table->string('year_student',4);
+            $table->string('year_study',4);
             $table->string('remark',255);
             $table->timestamps();
         });

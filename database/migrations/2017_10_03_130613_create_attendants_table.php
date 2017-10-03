@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateActivitiesCalendarTable extends Migration
+class CreateAttendantsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateActivitiesCalendarTable extends Migration
      */
     public function up()
     {
-        Schema::create('activities_calendar', function (Blueprint $table) {
+        Schema::create('attendants', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('date_activity');
-            $table->integer('activity_id')->unsigned();
+            $table->string('sap_id');
+            $table->date('date_stamp');
+            $table->time('time_stamp');
             $table->string('reader_location',2);
+            $table->integer('activity_id')->unsigned();
+            $table->status('status')->unsigned();
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreateActivitiesCalendarTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('activities_calendar');
+        Schema::dropIfExists('attendants');
     }
 }
