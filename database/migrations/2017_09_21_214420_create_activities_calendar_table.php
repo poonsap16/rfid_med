@@ -16,7 +16,7 @@ class CreateActivitiesCalendarTable extends Migration
         Schema::create('activities_calendar', function (Blueprint $table) {
             $table->increments('id');
             $table->date('date_activity');
-            $table->integer('activity_id')->unsigned();
+            $table->integer('activity_id');
             $table->string('reader_location',2);
             $table->timestamps();
         });

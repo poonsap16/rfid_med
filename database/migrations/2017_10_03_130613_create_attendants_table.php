@@ -20,7 +20,7 @@ class CreateAttendantsTable extends Migration
             $table->time('time_stamp');
             $table->string('reader_location',2);
             $table->integer('activity_id')->unsigned();
-            $table->status('status')->unsigned();
+            $table->integer('status')->unsigned();
             $table->timestamps();
         });
     }

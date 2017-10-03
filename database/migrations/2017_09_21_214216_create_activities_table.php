@@ -20,9 +20,9 @@ class CreateActivitiesTable extends Migration
             $table->string('activity_acronym',30);
             $table->time('time_start');
             $table->time('time_end');
-            $table->string('job_id',30)();
-            $table->string('person_type',2)();
-            $table->string('reader_location',2)();
+            $table->string('job_id',30);
+            $table->string('person_type',2);
+            $table->string('reader_location',2);
             $table->timestamps();
         });
     }
