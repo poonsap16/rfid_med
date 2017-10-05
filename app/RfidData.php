@@ -11,8 +11,8 @@ class RfidData extends Model
     protected $table = 'rfid_data';
 
     protected $fillable = [
-	    	'id',
-	    	'rfid_number',
+	    	  'id',
+	    	  'rfid_number',
 	        'sap_id',
 	        'firstname_lastname',
 	        'date_stamp',
@@ -21,15 +21,15 @@ class RfidData extends Model
 	        'reader_status',
 	        'reader_door'
     ];
-    
+
     public static function loadData($fileName)
     {
     	$rfidRecords = loadCSV($fileName);
 
     	foreach ($rfidRecords as $rfidRecord) {
-    		
+
     		// RfidData::date_stamp=(Carbon::createFromFormat('m/d/Y', 'date_stamp')->toDateString();)
-    		
+
     		$rfidRecord['date_stamp'] = Carbon::createFromFormat('m/d/Y', $rfidRecord['date_stamp'])->toDateString();
 
     		RfidData::create($rfidRecord);
