@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 use Carbon\Carbon;
 
@@ -40,10 +41,6 @@ class RfidData extends Model
 
     	// return $rfidRecords;
     }
-
-    public static function loadData1($fileName)
-    {
-    	// return $fileName;
 
     }
 }
