@@ -22,6 +22,7 @@ class RfidDataController extends Controller
   }
 
   public function upload(Request $request){
+        //Check ว่า input มีไฟล์หรือไม่
         if ($request->hasFile('files')){
           foreach($request->file('files') as $file){
               if ($file->isValid()) {
@@ -29,9 +30,9 @@ class RfidDataController extends Controller
                   $filePaths[] = $file->store('uploads');
 
                   $data = $this->loadCSVFromUpload($filePaths[0]);
-                  return $data;
+                  //return $data;
               }
-          }
+            }
               // return "file is invalid";
 
           foreach($filePaths as $filePath){
@@ -42,9 +43,9 @@ class RfidDataController extends Controller
               Storage::delete($filePath);
           }
       }
-      //return "no file";
-     return $filePath;
-      // return $request->all();
+      return "No file to select";
+      //return $filePath;
+      //return $request->all();
 }
 
 function loadCSVFromUpload($fileName) {
