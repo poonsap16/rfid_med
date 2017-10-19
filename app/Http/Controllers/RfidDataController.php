@@ -29,7 +29,7 @@ class RfidDataController extends Controller
                   // return "file is valid";
                   $filePaths[] = $file->store('uploads');
 
-                  $data = $this->loadCSVFromUpload($filePaths[0]);
+                  // $data = $this->loadCSVFromUpload($filePaths[0]);
                   //return $data;
               }
             }

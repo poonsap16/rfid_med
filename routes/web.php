@@ -12,6 +12,15 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
+Route::get('/uploadfile', function() {
+    return view('uploadfile');
+});
+
+Route::post('/uploadfile', 'UploadFileController@uploadFile');
+
+
+//Route::post('/uploadfile', 'RfidDataController@upload');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,11 +29,6 @@ Route::get('/import', function () {
     return view('import_csv');
 });
 
-Route::get('/test', function() {
-    return view('test');
-});
-
-Route::post('/test', 'RfidDataController@upload');
 
 
 
