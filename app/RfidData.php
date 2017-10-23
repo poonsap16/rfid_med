@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 
-use Carbon\Carbon;
+
 
 class RfidData extends Model
 {
@@ -40,7 +40,7 @@ class RfidData extends Model
     	// return RfidData::create($rfidRecords[0]);
 
     	// return $rfidRecords;
-    }
+
 
     }
 }
