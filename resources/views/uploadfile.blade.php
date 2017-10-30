@@ -37,10 +37,10 @@
         <form class="form-inline" action="/uploadfile" method="POST" enctype="multipart/form-data">
           <div class="form-group">
           {{ csrf_field() }}
-            <label for="email">Select File:</label>
+            <label for="file">Select File:</label>
             <input class="form-control" type="file" name="files[]" multiple/>
           </div>
-            <input class="btn btn-default" type="submit" value="upload file">
+            <input class="btn" type="submit" value="upload file">
         </form>
     </div>
   </body>

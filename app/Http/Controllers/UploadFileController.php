@@ -27,7 +27,11 @@ class UploadFileController extends Controller
             $data = $this->loadData($filePath);
             }
         }
-          return "upload data complete.";
+        else{
+          return back();
+        }
+          return view('/uploadFile');
+
     }
 
     function loadCSVFromUpload($fileName) {
