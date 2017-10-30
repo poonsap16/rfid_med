@@ -9,6 +9,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
         html, body {
@@ -30,25 +32,28 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
-      <!-- ส่วนหัวของ application -->
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rfidNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="/rfid">RFID Medicine Record</a>
         </div>
-        </nav>
-        <nav>
-        <!-- รายการเมนูของ application -->
-        <div>
-          <ul class="nav nav-justified">
-          <li><a href="/uploadfile">โหลดข้อมูล</a></li>
-          <li><a href="#">รายการกิจกรรม</a></li>
-          <li><a href="#">จัดตารางกิจกรรม</a></li>
-          <li><a href="#">รายงาน</a></li>
-          <li><a href="#">Contact</a></li>
+        <div class="collapse navbar-collapse" id="rfidNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/rfid">Home</a></li>
+            <li><a href="/uploadfile">Load Data</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
         </div>
-      </nav>
       </div>
     </nav>
 
