@@ -14,7 +14,8 @@ class CreateRfidData extends Migration
     public function up()
     {
         Schema::create('rfid_data', function (Blueprint $table) {
-          $table->integer('id');
+          $table->increments('id');
+          $table->integer('rfid_id');
           $table->string('rfid_number',15);
           $table->string('sap_id');
           $table->string('firstname_lastname',255);
@@ -23,6 +24,7 @@ class CreateRfidData extends Migration
           $table->string('reader_location',2);
           $table->string('reader_status',2);
           $table->string('reader_door',10);
+
           $table->timestamps();
         });
     }

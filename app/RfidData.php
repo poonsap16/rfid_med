@@ -12,7 +12,7 @@ class RfidData extends Model
     protected $table = 'rfid_data';
 
     protected $fillable = [
-	    	  'id',
+	    	  'rfid_id',
 	    	  'rfid_number',
 	        'sap_id',
 	        'firstname_lastname',

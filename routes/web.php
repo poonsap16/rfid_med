@@ -22,3 +22,6 @@ Route::post('/uploadfile', 'UploadFileController@uploadFile');
 Route::get('/rfid', function () {
     return view('rfid_index');
 });
+
+Route::get('/activities/index', 'ActivitiesController@index');
+Route::get('/activities/create', 'ActivitiesController@create');

@@ -50,7 +50,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manege Activity
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Activity List</a></li>
+                      <li><a href="/activities/create">Activity List</a></li>
                       <li><a href="#">Activity Schedule</a></li>
                       <li><a href="#">Page 1-3</a></li>
                     </ul>

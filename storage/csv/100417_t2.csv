@@ -1,4 +1,4 @@
-id,rfid_number,sap_id,firstname_lastname,date_stamp,time_stamp,reader_location,reader_status,reader_door
+rfid_id,rfid_number,sap_id,firstname_lastname,date_stamp,time_stamp,reader_location,reader_status,reader_door
 1,2443522597,10031417,ONGSRI PUNYAWEE,9/29/2017,8:57:16,1,1,MAIN
 2,206518780,10016889,AUANGPRASERT PRATHOMPONG,9/29/2017,8:56:38,1,0,2
 3,3481438502,10029584,KONTHA SARUT,9/29/2017,8:56:31,1,0,2
