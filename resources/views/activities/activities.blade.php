@@ -61,6 +61,7 @@
             <td>{{ $activity->job_id_ref }}</td>
             <td>{{ $activity->person_type }}</td>
             <td>{{ $activity->reader_location }}</td>
+            <td><a href="/activities/edit/{{ $activity->id }}">Edit</a></td>
           @endforeach
 
           </tr>

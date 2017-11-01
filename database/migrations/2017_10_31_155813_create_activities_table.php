@@ -20,8 +20,8 @@ class CreateActivitiesTable extends Migration
             $table->string('activity_acronym');
             $table->time('time_start');
             $table->time('time_end');
-            $table->string('job_id_ref',30);
-            $table->string('person_type',30);
+            $table->string('job_id_ref');
+            $table->string('person_type');
             $table->string('reader_location',2);
             $table->timestamps();
         });
