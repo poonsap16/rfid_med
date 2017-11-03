@@ -57,4 +57,5 @@ class ActivitiesController extends Controller
     {
         //
     }
+
 }

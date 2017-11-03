@@ -37,7 +37,7 @@
       <div class="table-responsive">
       <table class="table table-bordered table-hover">
         <thead>
-          <tr class="active">
+          <tr class="active" style="text-align:center;">
             <th>#</th>
             <th>รหัสกิจกรรม</th>
             <th>ชื่อกิจกรรม</th>
@@ -62,6 +62,7 @@
             <td>{{ $activity->person_type }}</td>
             <td>{{ $activity->reader_location }}</td>
             <td><a href="/activities/edit/{{ $activity->id }}">Edit</a></td>
+            
           @endforeach
 
           </tr>

@@ -41,19 +41,19 @@
             <div class="col-md-3">
               <div class="form-group">
                 <label for="act_id">รหัสกิจกรรม :</label>
-                <input type="text" class="form-control" name="activity_id" value={{ $data->activity_id }}>
+                <input type="text" class="form-control" name="activity_id" value="{{ $data->activity_id }}">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 <label for="act_name">ชื่อกิจกรรม :</label>
-                <input type="text" class="form-control" name="activity_name" value={{ $data->activity_name }}>
+                <input type="text" class="form-control" name="activity_name" value="{{ $data->activity_name }}">
               </div>
             </div>
             <div class="col-md-3">
               <div class="form-group">
                 <label for="act_acronym">ชื่อย่อกิจกรรม :</label>
-                <input type="text" class="form-control" name="activity_acronym" value={{ $data->activity_acronym }}>
+                <input type="text" class="form-control" name="activity_acronym" value="{{ $data->activity_acronym }}">
               </div>
             </div>
           </div>
@@ -62,13 +62,13 @@
             <div class="col-md-2">
               <div class="form-group">
                 <label for="t_start">เวลาเริ่มกิจกรรม :</label>
-                <input type="time" class="form-control" name="time_start" value={{ $data->time_start }}>
+                <input type="time" class="form-control" name="time_start" value="{{ $data->time_start }}">
               </div>
             </div>
             <div class="col-md-2">
               <div class="form-group">
                 <label for="t_end">เวลาสิ้นสุดกิจกรรม :</label>
-                <input type="time" class="form-control" name="time_end" value={{ $data->time_end }}>
+                <input type="time" class="form-control" name="time_end" value="{{ $data->time_end }}">
               </div>
             </div>
           </div>
@@ -77,19 +77,19 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label for="job_ref">รหัสงาน infomed :</label>
-                  <input type="text" class="form-control" name="job_id_ref" value={{ $data->job_id_ref }}>
+                  <input type="text" class="form-control" name="job_id_ref" value="{{ $data->job_id_ref }}">
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <label for="p_type">ประเภท/ผู้เข้าร่วมกิจกรรม :</label>
-                  <input type="text" class="form-control" name="person_type" value={{ $data->person_type }}>
+                  <input type="text" class="form-control" name="person_type" value="{{ $data->person_type }}">
               </div>
             </div>
             <div class="col-md-2">
               <div class="form-group">
                 <label for="r_location">เครื่องทาบบัตร :</label>
-                <input type="text" class="form-control" name="reader_location" value={{ $data->reader_location }}>
+                <input type="text" class="form-control" name="reader_location" value="{{ $data->reader_location }}"">
               </div>
             </div>
           </div>
