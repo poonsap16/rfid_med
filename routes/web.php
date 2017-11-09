@@ -13,6 +13,14 @@ use App\Http\Controllers\Controller;
 |
 */
 
+Route::get('/navbar', function () {
+    return view('navbar');
+});
+
+Route::get('/logout', function () {
+    return 'You are logout';
+});
+
 Route::get('/uploadfile', function() {
     return view('uploadfile');
 });
