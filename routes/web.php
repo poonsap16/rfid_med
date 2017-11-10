@@ -14,7 +14,7 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('/navbar', function () {
-    return view('navbar');
+    return view('navbars.navbar');
 });
 
 Route::get('/logout', function () {
