@@ -13,8 +13,12 @@ use App\Http\Controllers\Controller;
 |
 */
 
-Route::get('/navbar', function () {
-    return view('navbars.navbar');
+Route::get('/navbar-admin', function () {
+    return view('navbars.navbar-admin');
+});
+
+Route::get('/navbar-edu', function () {
+    return view('navbars.navbar-education');
 });
 
 Route::get('/logout', function () {
