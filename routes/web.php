@@ -12,6 +12,9 @@ use App\Http\Controllers\Controller;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/bt-local', function(){
+    return view('bt-local');
+});
 
 Route::get('/navbar-admin', function () {
     return view('navbars.navbar-admin');
@@ -19,6 +22,10 @@ Route::get('/navbar-admin', function () {
 
 Route::get('/navbar-edu', function () {
     return view('navbars.navbar-education');
+});
+
+Route::get('/navbar-con', function () {
+    return view('navbars.navbar-con');
 });
 
 Route::get('/logout', function () {
