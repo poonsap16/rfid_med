@@ -54,3 +54,9 @@ Route::get('/activities/create', 'ActivitiesController@create');
 Route::post('/activities/store', 'ActivitiesController@store');
 Route::get('/activities/edit/{id}', 'ActivitiesController@edit');
 Route::patch('/activities/update/{id}', 'ActivitiesController@update');
+
+
+Route::get('/draft/{viewName}', function($viewName){
+    $username = 'poonsap';
+    return view('draft.'.$viewName, compact('username'));
+});
