@@ -60,3 +60,5 @@ Route::get('/draft/{viewName}', function($viewName){
     $username = 'poonsap';
     return view('draft.'.$viewName, compact('username'));
 });
+
+Route::view('about','rfid_index');

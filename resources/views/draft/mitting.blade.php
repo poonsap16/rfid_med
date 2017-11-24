@@ -2,8 +2,8 @@
 
 @section('title','Homepage RFID')
 
-@section('group','EDU')
+@section('group','Mitting')
 
 @section('feature')
-    @include('draft.edu.feature')
+    @include('draft.mitting.feature')
 @endsection
