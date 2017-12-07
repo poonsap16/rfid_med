@@ -33,7 +33,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a>{{$username}}</a></li>
+        <li class="active"><a>{{ Auth::user()->name }}</a></li>
         <li><a href="/logout">Logout</a></li>
       </ul>
 

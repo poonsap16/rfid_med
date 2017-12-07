@@ -2,6 +2,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Controller;
+// use \App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -62,3 +63,16 @@ Route::get('/draft/{viewName}', function($viewName){
 });
 
 Route::view('about','rfid_index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/logout', 'LoginController@logout');
+
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::get('guest', function () {
+    return view('guest');
+});
