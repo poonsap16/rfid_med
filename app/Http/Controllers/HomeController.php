@@ -31,7 +31,8 @@ class HomeController extends Controller
         } else if ($user == 'edu'){
             return view('draft.edu');
             } else if ($user == 'mitting'){
-        }
+                return view('draft.mitting');
+            }
 
         
     }
