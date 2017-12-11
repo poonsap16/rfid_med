@@ -30,6 +30,7 @@ class HomeController extends Controller
             return view('draft.admin');
         } else if ($user == 'edu'){
             return view('draft.edu');
+            } else if ($user == 'mitting'){
         }
 
         
