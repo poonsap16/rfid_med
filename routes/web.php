@@ -57,10 +57,10 @@ Route::get('/activities/edit/{id}', 'ActivitiesController@edit');
 Route::patch('/activities/update/{id}', 'ActivitiesController@update');
 
 
-// Route::get('/draft/{viewName}', function($viewName){
-//     $username = 'poonsap';
-//     return view('draft.'.$viewName, compact('username'));
-// });
+Route::get('/draft/{viewName}', function($viewName){
+     $username = 'poonsap';
+     return view('draft.'.$viewName, compact('username'));
+});
 
 Route::view('about','rfid_index');
 
@@ -75,4 +75,6 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('guest', function () {
     return view('guest');
+    // return view('draft.calendar');
 });
+
