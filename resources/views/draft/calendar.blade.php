@@ -12,6 +12,8 @@
     <script src='/js/fullcalendar.js'></script>
     <script src='/js/locale-th.js'></script>
 
+
+
     <script>
         $(document).ready(function() {
 
@@ -19,6 +21,11 @@
 
             $('#calendar').fullCalendar({
                 // put your options and callbacks here
+                header: {
+				left: 'prev,next today',
+               	center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			    },
                 dayClick: function() {
                     alert('a day has been clicked!');
                 },
@@ -45,9 +52,8 @@
     </script>
 </head>
 <body>
-    <div id='calendar'></div>
-    dayClick: function() {
-        alert('a day has been clicked!');
-    }
+    <div id="calendar"></div>
+
+    
 </body>
 </html>
