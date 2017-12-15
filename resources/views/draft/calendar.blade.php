@@ -24,8 +24,26 @@
                 header: {
 				left: 'prev,next today',
                	center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			    },
+				// right: 'month,agendaWeek,agendaDay'
+                // right: 'listDay,listWeek,month'
+                right: 'month,agendaWeek,agendaDay,listMonth'
+                },
+
+                footer: {
+				left: 'prev,next today',
+               	center: 'title',
+				// right: 'month,agendaWeek,agendaDay'
+                // right: 'listDay,listWeek,month'
+                right: 'month,agendaWeek,agendaDay,listMonth'
+                },
+        		// customize the button names,
+                // otherwise they'd all just say "list"
+                views: {
+                    listDay: { buttonText: 'list day' },
+                    listWeek: { buttonText: 'list week' }
+                },
+                //defaultView: 'listWeek',
+
                 dayClick: function() {
                     alert('a day has been clicked!');
                 },
